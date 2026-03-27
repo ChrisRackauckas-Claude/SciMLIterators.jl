@@ -1,0 +1,20 @@
+name = "SciMLIterators"
+uuid = "efe4dcdd-3aed-4391-894d-a9dbd16a2f14"
+authors = ["Chris Rackauckas <accounts@chrisrackauckas.com> and contributors"]
+version = "1.0.0"
+
+[deps]
+RecursiveArrayTools = "731186ca-8d62-57ce-b412-fbd966d074cd"
+SciMLBase = "0bca4576-84f4-4d90-8ffe-ffa030f20462"
+
+[compat]
+RecursiveArrayTools = "3, 4"
+SciMLBase = "2.152, 3"
+julia = "1.10"
+
+[extras]
+OrdinaryDiffEq = "1dea7af3-3e70-54e6-95c3-0bf5283fa5ed"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test", "OrdinaryDiffEq"]
